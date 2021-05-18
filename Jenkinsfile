@@ -49,7 +49,7 @@ pipeline {
         }
 	stage('Verify-The-Deployment') {
 	    steps {
-		sh 'docker ps -a'
+		sh 'ssh -i /opt/prod produser@172.31.32.234 "docker logs maven-app"'
 		}
 	}
     }
