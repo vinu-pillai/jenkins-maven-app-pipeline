@@ -47,5 +47,10 @@ pipeline {
                 sh './03_deploy.sh'
             }
         }
+	stage('Verify-The-Deployment') {
+	    steps {
+		sh 'docker logs maven-app'
+		}
+	}
     }
 }
