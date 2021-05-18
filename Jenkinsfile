@@ -44,7 +44,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh './04_deploy_publish'
+                sh './03_deploy.sh'
             }
         }
     }
