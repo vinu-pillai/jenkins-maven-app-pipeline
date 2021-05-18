@@ -49,7 +49,7 @@ pipeline {
         }
 	stage('Verify-The-Deployment') {
 	    steps {
-		sh 'docker logs maven-app'
+		sh 'docker ps -a'
 		}
 	}
     }
