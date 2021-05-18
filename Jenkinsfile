@@ -38,13 +38,13 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh '02_push.sh'
+                sh './02_push.sh'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh '04_deploy_publish'
+                sh './04_deploy_publish'
             }
         }
     }
