@@ -6,7 +6,7 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "If you see this message, then you have successfully deployed a java app! Boo-Hoo..!!";
+    private final String message = "If you see this message, then you got trained in Jenkins!";
 
     public App() {}
 
