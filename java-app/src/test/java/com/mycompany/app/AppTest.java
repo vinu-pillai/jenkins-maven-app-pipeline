@@ -34,7 +34,7 @@ public class AppTest
     {
         App.main(null);
         try {
-            assertEquals("If you see this message, then you have successfully deployed a java app! Boo-Hoo..!!" + System.getProperty("line.separator"), outContent.toString());
+            assertEquals("If you see this message, then you got trained in Jenkins!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"message\" is not \"message\"");
         }
